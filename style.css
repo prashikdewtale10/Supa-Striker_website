@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e51e2a;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.nav .max_width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .logo{
+    margin-top: 35px;
+    width: 430px;
+}
+.nav .logo img{
+    width: 100%;
+    margin-top: 10px;
+}
+.nav .img {
+    margin-right: 10px;
+}
+.nav .navg{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+   
+}
+.nav .max_width .navg .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.nav .menu li a{
+display: block;
+color: #fff;
+font-size: 27px;
+font-weight: 600;
+margin-left: 25px;
+text-decoration: none;
+transition: color 0.3s ease-in-out;
+font-family: 'Ubuntu', sans-serif;
+text-align: center;
+letter-spacing: 0px;
+padding: 0 10px;
+margin-right:5px ;
+border-right: 2px solid #fff;
+height: 100%;
+}
+.nav .menu li a span{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: yellow;
+}
+.nav .menu li a:hover{
+color: yellow;
+}
+
+.nav.sticky .menu li a:hover{
+    color:#fff;
+    }
+.nav .navg .menu button{
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+   background: black;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: none;
+    margin-left: 60px;
+
+}
+.nav .navg .menu button div{
+    display: flex;
+    color: white;
+    
+}
+.nav.sticky{
+    background: #333;
+    color: white;
+    height: 90px;
+
+    }
+
+
+.dropdown{
+    margin-top: 5px;
+    display: none;
+    border: 3px solid #fff;
+    padding: 10px 40px 20px 0px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    transition: all 0.3s ease ;
+}
+.dropdown a{
+
+    display: block;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.dropdown a:hover{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.show {
+    display: block;
+}
+
+.team{
+    text-align: center;
+    /* height: 120vh; */
+    width: 100%;
+}
+.team img{
+   width: 880px;
+   height: auto;
+   margin-top: 120px;
+}
+
+
+.how_image{
+    position: relative;
+}
+
+/* Video Section */
+.video{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.video iframe{
+    margin-top: 100px;
+}
+
+.opposation{
+    height: 120vh;
+    background-color: #e4e41b;
+    border-top: 10px solid #fff;
+    display: flex;
+}
+.opposation .column1{
+    width: 50%;
+    height: 100%;
+    border-right: 5px solid #fff;
+}
+.opposation .column2{
+    border-left: 5px solid #fff;
+}
+.opposation .column1 .left{
+    display: block;
+    margin-left:100px;
+    padding-top: 150px;
+}
+.opposation .column2 .right{
+    display: block;
+    margin-left:150px;
+    padding-top: 150px;
+}
+.opposation .column1 .left .team_name,
+.opposation .column2 .right .team_name{
+    margin-bottom: 10px;
+}
+.opposation .column1 .left h3 , .opposation .column2 .right h3{
+    color:  #e51e2a;
+    font-family: 'Crete Round', serif;
+    font-size: 50px;
+    text-align: center;
+}
+.opposation .column1 .left .slogan ,
+.opposation .column2 .right .slogan{
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+}
+.opposation .column1 .left .para ,
+.opposation .column2 .right .para{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+.opposation .column1 .left button ,
+.opposation .column2 .right button{
+padding: 15px 35px;
+text-align: center;
+display: block;
+margin: auto;
+border-radius: 20px;
+outline: none;
+background: none;
+font-weight: 600;
+border: 1px solid black;
+margin-bottom: 20px;
+transition: all 0.3s ease-in-out ;
+cursor: pointer;
+}
+.opposation .column1 .left button:hover{
+    padding-right: 50px;
+}
+
+.cars{
+display: flex;
+justify-content: space-around;
+transition: all 0.3s ease ;
+}
+.cars img{
+    width: 75%;
+}
+.cars .carss .teamlogo{
+margin-left: 50px;
+}
+.cars1{
+    display: flex;
+}
+.cars1 .teamlogo1 img{
+    width:260px;
+}
+.cars1 .carss1 img{
+    width: 200px;
+}
+.merchant{
+    background: grey;
+}
+.merchant .cent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #393e46;
+}
+.cent{
+    background: grey;
+    padding-top: 50px;
+}
+.cent .text{
+    color: yellow;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+.cent .lie{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: Georgia, serif;
+    margin-top: 5px;
+}
+.cent p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.cent .ia{
+    height: auto;
+    margin-bottom: 50px;
+}
+.cent .ia img{
+    width: 900px;
+    height: auto;
+}
+.cent .btn{
+    margin-bottom: 100px;
+}
+.cent .btn button{
+    padding: 15px 25px 15px 30px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.cent .btn button span{
+    margin-left: 20px;
+}
+.cent .btn button:hover{
+    padding-right: 45px;
+}
+.follow{
+    background-color: yellow;
+    height: 350px;
+}
+.follow .follow_main{
+    display: flex;
+    justify-content: space-around;
+}
+.follow .follow_main .left_main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+}
+.follow .follow_main .left_main .left_text{
+    color:#e51e2a ;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+.follow .follow_main .left_main .heading{
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.follow .follow_main .left_main .social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+   color: black;
+   border-radius:50%;
+   background-color:#fff;
+  }
+  .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+    
+  }
+
+.follow .follow_main .right_main img{
+    margin-top: -125px;
+    height: 650px;
+    cursor: pointer;
+}
+    .follow .follow_main .right_main img:hover{
+    position: relative;
+    animation-name: prash;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate  
+    
+}
+
+@keyframes prash{
+    0%{
+        right: 0px;
+
+     }
+ 
+
+ 
+    100%{
+     right: 100px;
+       }
+ }
+.footer{
+    width: 100%;
+    height: 30px;
+    margin-top: 150px;
+}
+.footer .text {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-family: monospace;
+}
